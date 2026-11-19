@@ -1,4 +1,4 @@
-/* =====  CSS by Christina Carrasquilla =====  */
+/* =====  CSS by Christina Carrasquilla, updated by Zsazsa hall=====  */
 
 /* ===== Color Palette 
 
@@ -18,6 +18,8 @@ body {
     margin: 0;
     background-color: #F7F4EF;
     color: #2F2F2F;
+    display:grid;
+    grid-template-columns: 1fr;
 }
 
 header {
@@ -42,11 +44,25 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
 }
 
+main a {
+    background-color: #D9A441;
+    color: #2F2F2F;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: inline-block;
+    text-transform:uppercase;
+}
+
+main a:hover {
+    background-color: #B35A3C;
+    color: white;
+}
+
+main {
+    padding: 1rem;
+}
 nav a {
     color: white;
     text-decoration: none;
@@ -57,19 +73,10 @@ nav a {
 
 nav a:hover {
     background-color: #B35A3C;
+    
 }
-
-main {
-    padding: 1rem;
-}
-
 section {
     margin-bottom: 2rem;
-}
-
-.card-row {
-    display: flex;
-    gap: 1rem;
 }
 
 .card-row section {
@@ -96,4 +103,21 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+}
+/* ===== MEDIA QUERIES ===== (MEDIUM) ===== */
+@media screen and (min-width: 838px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .card-row {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .card-row section {
+        width: 30%;
+    }
 }
